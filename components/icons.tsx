@@ -40,6 +40,7 @@ export const Icons = {
   trash: Trash,
   post: FileText,
   page: File,
+  file: File,
   media: Image,
   settings: Settings,
   billing: CreditCard,
