@@ -83,8 +83,12 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
           title: 'Welcome back!',
           description: 'You have been successfully logged in.',
         })
-        const redirectUrl = searchParams?.get('from') || '/dashboard/documents'
-        router.push(redirectUrl)
+        const redirectUrl = searchParams?.get('to') || '/dashboard/documents'
+        
+        // Small delay to ensure Redux store is updated
+        setTimeout(() => {
+          router.push(redirectUrl)
+        }, 100)
       }
     } catch (error: any) {
       toast({
@@ -104,8 +108,12 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
           title: 'Authentication Successful',
           description: 'You have been successfully logged in.',
         })
-        const redirectUrl = searchParams?.get('from') || '/dashboard/documents'
-        router.push(redirectUrl)
+        const redirectUrl = searchParams?.get('to') || '/dashboard/documents'
+        
+        // Small delay to ensure Redux store is updated
+        setTimeout(() => {
+          router.push(redirectUrl)
+        }, 100)
       }
     } catch (error: any) {
       toast({

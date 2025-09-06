@@ -142,7 +142,7 @@ A comprehensive ReactJS application for internal document management with sensit
 3. **Environment Setup**
    Create a `.env.local` file:
    ```env
-   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_URL=http://172.20.10.6:3000
    NEXTAUTH_SECRET=your-nextauth-secret
    DATABASE_URL=postgresql://username:password@localhost:5432/database
    

@@ -853,7 +853,7 @@
         "id": "(sc_client)/./hooks/use-auth.ts",
         "name": "*",
         "chunks": [
-          "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -861,7 +861,7 @@
         "id": "(sc_client)/./hooks/use-auth.ts",
         "name": "",
         "chunks": [
-          "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -869,7 +869,7 @@
         "id": "(sc_client)/./hooks/use-auth.ts",
         "name": "useAuth",
         "chunks": [
-          "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       }
@@ -879,7 +879,7 @@
         "id": "(sc_client)/./components/main-nav.tsx",
         "name": "*",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
         ],
         "async": false
       },
@@ -887,7 +887,7 @@
         "id": "(sc_client)/./components/main-nav.tsx",
         "name": "",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
         ],
         "async": false
       },
@@ -895,7 +895,7 @@
         "id": "(sc_client)/./components/main-nav.tsx",
         "name": "MainNav",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
         ],
         "async": false
       }
@@ -905,7 +905,7 @@
         "id": "(sc_client)/./components/mode-toggle.tsx",
         "name": "*",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -913,7 +913,7 @@
         "id": "(sc_client)/./components/mode-toggle.tsx",
         "name": "",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -921,7 +921,7 @@
         "id": "(sc_client)/./components/mode-toggle.tsx",
         "name": "ModeToggle",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       }
@@ -931,7 +931,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "*",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -939,7 +939,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -947,7 +947,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenu",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -955,7 +955,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuCheckboxItem",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -963,7 +963,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuContent",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -971,7 +971,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuGroup",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -979,7 +979,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuItem",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -987,7 +987,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuLabel",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -995,7 +995,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuPortal",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1003,7 +1003,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuRadioGroup",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1011,7 +1011,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuRadioItem",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1019,7 +1019,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuSeparator",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1027,7 +1027,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuShortcut",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1035,7 +1035,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuSub",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1043,7 +1043,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuSubContent",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1051,7 +1051,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuSubTrigger",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1059,7 +1059,7 @@
         "id": "(sc_client)/./components/ui/dropdown-menu.tsx",
         "name": "DropdownMenuTrigger",
         "chunks": [
-          "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       }
@@ -1069,7 +1069,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1077,7 +1077,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       },
@@ -1085,7 +1085,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
         ],
         "async": false
       }
@@ -1209,12 +1209,907 @@
         ],
         "async": false
       }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/script.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "*",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "default",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "handleClientScriptLoad": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "handleClientScriptLoad",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "initScriptLoader": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "initScriptLoader",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "mount": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "mount",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "nonce": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "nonce",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "dangerouslySetInnerHTML": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "dangerouslySetInnerHTML",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "__html": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "__html",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "as": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "as",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "integrity": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "integrity",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "value": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "value",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "*",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "default",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "defaultHead": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "defaultHead",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "charSet": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "charSet",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "name": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "name",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "content": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "content",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "\"title\"": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "\"title\"",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "\"base\"": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "\"base\"",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "\"meta\"": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "\"meta\"",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "TODO(prateekbh@)": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "TODO(prateekbh@)",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "\"https": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "\"https",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "here": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "here",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "https": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "https",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "reduceComponentsToState": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "reduceComponentsToState",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "headManager": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "headManager",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "inAmpMode": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "inAmpMode",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "value": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "value",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "*",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "suspense": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "suspense",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      },
+      "NoSSR": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "NoSSR",
+        "chunks": [
+          "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/dashboard/layout.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/layout.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/layout.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/layout.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/nav.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/nav.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/nav.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "DashboardNav": {
+        "id": "(sc_client)/./components/nav.tsx",
+        "name": "DashboardNav",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/avatar.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/avatar.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/avatar.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "Avatar": {
+        "id": "(sc_client)/./components/ui/avatar.tsx",
+        "name": "Avatar",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "AvatarFallback": {
+        "id": "(sc_client)/./components/ui/avatar.tsx",
+        "name": "AvatarFallback",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "AvatarImage": {
+        "id": "(sc_client)/./components/ui/avatar.tsx",
+        "name": "AvatarImage",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/user-account-nav.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/user-account-nav.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/user-account-nav.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      },
+      "UserAccountNav": {
+        "id": "(sc_client)/./components/user-account-nav.tsx",
+        "name": "UserAccountNav",
+        "chunks": [
+          "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/dashboard/documents/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/documents/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/documents/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/documents/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/dashboard-layout.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/dashboard-layout.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/dashboard-layout.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "DashboardLayout": {
+        "id": "(sc_client)/./components/dashboard-layout.tsx",
+        "name": "DashboardLayout",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/protected-route.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/protected-route.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/protected-route.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "AdminRoute": {
+        "id": "(sc_client)/./components/protected-route.tsx",
+        "name": "AdminRoute",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "ProtectedRoute": {
+        "id": "(sc_client)/./components/protected-route.tsx",
+        "name": "ProtectedRoute",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "UserRoute": {
+        "id": "(sc_client)/./components/protected-route.tsx",
+        "name": "UserRoute",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/select.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "Select": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "Select",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectContent": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectContent",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectGroup": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectGroup",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectItem": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectItem",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectLabel": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectLabel",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectSeparator": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectSeparator",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectTrigger": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectTrigger",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "SelectValue": {
+        "id": "(sc_client)/./components/ui/select.tsx",
+        "name": "SelectValue",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/sheet.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "Sheet": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "Sheet",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetContent": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetContent",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetDescription": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetDescription",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetFooter": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetFooter",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetHeader": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetHeader",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetTitle": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetTitle",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "SheetTrigger": {
+        "id": "(sc_client)/./components/ui/sheet.tsx",
+        "name": "SheetTrigger",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/tabs.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "Tabs": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "Tabs",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "TabsContent": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "TabsContent",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "TabsList": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "TabsList",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      },
+      "TabsTrigger": {
+        "id": "(sc_client)/./components/ui/tabs.tsx",
+        "name": "TabsTrigger",
+        "chunks": [
+          "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/post-create-button.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/post-create-button.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/post-create-button.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "PostCreateButton": {
+        "id": "(sc_client)/./components/post-create-button.tsx",
+        "name": "PostCreateButton",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/post-operations.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/post-operations.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/post-operations.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "PostOperations": {
+        "id": "(sc_client)/./components/post-operations.tsx",
+        "name": "PostOperations",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/alert-dialog.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialog": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialog",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogAction": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogAction",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogCancel": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogCancel",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogContent": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogContent",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogDescription": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogDescription",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogFooter": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogFooter",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogHeader": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogHeader",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogTitle": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogTitle",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      },
+      "AlertDialogTrigger": {
+        "id": "(sc_client)/./components/ui/alert-dialog.tsx",
+        "name": "AlertDialogTrigger",
+        "chunks": [
+          "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(dashboard)/dashboard/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(dashboard)/dashboard/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+        ],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
     "/Users/ebankcorp/Documents/os/AIWeb/app/layout": [
       "static/css/app/layout.css"
+    ],
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(marketing)/[...slug]/page": [
+      "static/css/app/(marketing)/[...slug]/page.css"
     ]
   },
   "clientModules": {
@@ -3043,7 +3938,7 @@
       "id": "(app-client)/./hooks/use-auth.ts",
       "name": "*",
       "chunks": [
-        "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3051,7 +3946,7 @@
       "id": "(app-client)/./hooks/use-auth.ts",
       "name": "",
       "chunks": [
-        "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3059,7 +3954,7 @@
       "id": "(app-client)/./hooks/use-auth.ts",
       "name": "useAuth",
       "chunks": [
-        "app/(auth)/login/page:static/chunks/app/(auth)/login/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3067,7 +3962,7 @@
       "id": "(app-client)/./components/main-nav.tsx",
       "name": "*",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
       ],
       "async": false
     },
@@ -3075,7 +3970,7 @@
       "id": "(app-client)/./components/main-nav.tsx",
       "name": "",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
       ],
       "async": false
     },
@@ -3083,7 +3978,7 @@
       "id": "(app-client)/./components/main-nav.tsx",
       "name": "MainNav",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
       ],
       "async": false
     },
@@ -3091,7 +3986,7 @@
       "id": "(app-client)/./components/mode-toggle.tsx",
       "name": "*",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3099,7 +3994,7 @@
       "id": "(app-client)/./components/mode-toggle.tsx",
       "name": "",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3107,7 +4002,7 @@
       "id": "(app-client)/./components/mode-toggle.tsx",
       "name": "ModeToggle",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3115,7 +4010,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "*",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3123,7 +4018,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3131,7 +4026,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenu",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3139,7 +4034,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuCheckboxItem",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3147,7 +4042,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuContent",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3155,7 +4050,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuGroup",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3163,7 +4058,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuItem",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3171,7 +4066,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuLabel",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3179,7 +4074,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuPortal",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3187,7 +4082,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuRadioGroup",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3195,7 +4090,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuRadioItem",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3203,7 +4098,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuSeparator",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3211,7 +4106,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuShortcut",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3219,7 +4114,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuSub",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3227,7 +4122,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuSubContent",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3235,7 +4130,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuSubTrigger",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3243,7 +4138,7 @@
       "id": "(app-client)/./components/ui/dropdown-menu.tsx",
       "name": "DropdownMenuTrigger",
       "chunks": [
-        "app/(marketing)/layout:static/chunks/app/(marketing)/layout.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3251,7 +4146,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3259,7 +4154,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3267,7 +4162,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3275,7 +4170,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3283,7 +4178,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3291,7 +4186,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     },
@@ -3404,6 +4299,1165 @@
       "name": "UserAuthForm",
       "chunks": [
         "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/styles/mdx.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/(marketing)/[...slug]/page.css"
+      ]
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#handleClientScriptLoad": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "handleClientScriptLoad",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#handleClientScriptLoad": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "handleClientScriptLoad",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#initScriptLoader": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "initScriptLoader",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#initScriptLoader": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "initScriptLoader",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#mount": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "mount",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#mount": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "mount",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#nonce": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "nonce",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#nonce": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "nonce",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#dangerouslySetInnerHTML": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "dangerouslySetInnerHTML",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#dangerouslySetInnerHTML": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "dangerouslySetInnerHTML",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#__html": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "__html",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#__html": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "__html",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#as": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "as",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#as": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "as",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#integrity": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "integrity",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#integrity": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "integrity",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/client/script.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "value",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/client/script.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "value",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#charSet": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "charSet",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#charSet": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "charSet",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#name": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "name",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#name": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "name",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#content": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "content",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#content": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "content",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#\"title\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"title\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#\"title\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"title\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#\"base\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"base\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#\"base\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"base\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#\"meta\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"meta\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#\"meta\"": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"meta\"",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#TODO(prateekbh@)": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "TODO(prateekbh@)",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#TODO(prateekbh@)": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "TODO(prateekbh@)",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#\"https": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"https",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#\"https": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "\"https",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#here": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "here",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#here": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "here",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#https": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "https",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#https": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "https",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#reduceComponentsToState": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "reduceComponentsToState",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#reduceComponentsToState": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "reduceComponentsToState",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#headManager": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "headManager",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#headManager": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "headManager",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#inAmpMode": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "inAmpMode",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#inAmpMode": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "inAmpMode",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/head.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "value",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/head.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "value",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "*",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "suspense",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "suspense",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "NoSSR",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "NoSSR",
+      "chunks": [
+        "app/(marketing)/[...slug]/page:static/chunks/app/(marketing)/[...slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/layout.tsx": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/layout.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/layout.tsx#": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/layout.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/layout.tsx#default": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/layout.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/nav.tsx": {
+      "id": "(app-client)/./components/nav.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/nav.tsx#": {
+      "id": "(app-client)/./components/nav.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/nav.tsx#DashboardNav": {
+      "id": "(app-client)/./components/nav.tsx",
+      "name": "DashboardNav",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/avatar.tsx": {
+      "id": "(app-client)/./components/ui/avatar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/avatar.tsx#": {
+      "id": "(app-client)/./components/ui/avatar.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/avatar.tsx#Avatar": {
+      "id": "(app-client)/./components/ui/avatar.tsx",
+      "name": "Avatar",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/avatar.tsx#AvatarFallback": {
+      "id": "(app-client)/./components/ui/avatar.tsx",
+      "name": "AvatarFallback",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/avatar.tsx#AvatarImage": {
+      "id": "(app-client)/./components/ui/avatar.tsx",
+      "name": "AvatarImage",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/user-account-nav.tsx": {
+      "id": "(app-client)/./components/user-account-nav.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/user-account-nav.tsx#": {
+      "id": "(app-client)/./components/user-account-nav.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/user-account-nav.tsx#UserAccountNav": {
+      "id": "(app-client)/./components/user-account-nav.tsx",
+      "name": "UserAccountNav",
+      "chunks": [
+        "app/(dashboard)/dashboard/layout:static/chunks/app/(dashboard)/dashboard/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/documents/page.tsx": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/documents/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/documents/page.tsx#": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/documents/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/documents/page.tsx#default": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/documents/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/dashboard-layout.tsx": {
+      "id": "(app-client)/./components/dashboard-layout.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/dashboard-layout.tsx#": {
+      "id": "(app-client)/./components/dashboard-layout.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/dashboard-layout.tsx#DashboardLayout": {
+      "id": "(app-client)/./components/dashboard-layout.tsx",
+      "name": "DashboardLayout",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/protected-route.tsx": {
+      "id": "(app-client)/./components/protected-route.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/protected-route.tsx#": {
+      "id": "(app-client)/./components/protected-route.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/protected-route.tsx#AdminRoute": {
+      "id": "(app-client)/./components/protected-route.tsx",
+      "name": "AdminRoute",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/protected-route.tsx#ProtectedRoute": {
+      "id": "(app-client)/./components/protected-route.tsx",
+      "name": "ProtectedRoute",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/protected-route.tsx#UserRoute": {
+      "id": "(app-client)/./components/protected-route.tsx",
+      "name": "UserRoute",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#Select": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "Select",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectContent": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectContent",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectGroup": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectGroup",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectItem": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectItem",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectLabel": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectLabel",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectSeparator": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectSeparator",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectTrigger": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectTrigger",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/select.tsx#SelectValue": {
+      "id": "(app-client)/./components/ui/select.tsx",
+      "name": "SelectValue",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#Sheet": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "Sheet",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetContent": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetContent",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetDescription": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetDescription",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetFooter": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetFooter",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetHeader": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetHeader",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetTitle": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetTitle",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/sheet.tsx#SheetTrigger": {
+      "id": "(app-client)/./components/ui/sheet.tsx",
+      "name": "SheetTrigger",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx#": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx#Tabs": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "Tabs",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx#TabsContent": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "TabsContent",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx#TabsList": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "TabsList",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/tabs.tsx#TabsTrigger": {
+      "id": "(app-client)/./components/ui/tabs.tsx",
+      "name": "TabsTrigger",
+      "chunks": [
+        "app/(dashboard)/dashboard/documents/page:static/chunks/app/(dashboard)/dashboard/documents/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-create-button.tsx": {
+      "id": "(app-client)/./components/post-create-button.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-create-button.tsx#": {
+      "id": "(app-client)/./components/post-create-button.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-create-button.tsx#PostCreateButton": {
+      "id": "(app-client)/./components/post-create-button.tsx",
+      "name": "PostCreateButton",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-operations.tsx": {
+      "id": "(app-client)/./components/post-operations.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-operations.tsx#": {
+      "id": "(app-client)/./components/post-operations.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/post-operations.tsx#PostOperations": {
+      "id": "(app-client)/./components/post-operations.tsx",
+      "name": "PostOperations",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialog": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialog",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogAction": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogAction",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogCancel": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogCancel",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogContent": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogContent",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogDescription": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogDescription",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogFooter": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogFooter",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogHeader": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogHeader",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogTitle": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogTitle",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/components/ui/alert-dialog.tsx#AlertDialogTrigger": {
+      "id": "(app-client)/./components/ui/alert-dialog.tsx",
+      "name": "AlertDialogTrigger",
+      "chunks": [
+        "app/(dashboard)/dashboard/loading:static/chunks/app/(dashboard)/dashboard/loading.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/page.tsx": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/page.tsx#": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
+      ],
+      "async": false
+    },
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/page.tsx#default": {
+      "id": "(app-client)/./app/(dashboard)/dashboard/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(dashboard)/dashboard/page:static/chunks/app/(dashboard)/dashboard/page.js"
       ],
       "async": false
     }

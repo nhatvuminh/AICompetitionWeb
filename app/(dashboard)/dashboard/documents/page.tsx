@@ -65,7 +65,7 @@ export default function DocumentsPage() {
   const filteredDocuments = useMemo(() => {
     if (!documents) return []
     return documents.filter(doc => {
-      if (filters.search && !doc.name.toLowerCase().includes(filters.search.toLowerCase())) {
+      if (filters.search && !doc.filename.toLowerCase().includes(filters.search.toLowerCase())) {
         return false
       }
       return true
@@ -113,7 +113,7 @@ export default function DocumentsPage() {
         title="Documents"
         description="Manage and review your uploaded documents"
         headerActions={
-          <Button asChild>
+          <Button>
             <Link href="/dashboard/upload">
               <Icons.add className="mr-2 h-4 w-4" />
               Upload Document

@@ -21,15 +21,13 @@ export const useAuth = () => {
   
   const {
     user,
-    token,
-    refreshToken,
+    tokens,
     isAuthenticated,
     twoFactorRequired,
     twoFactorSessionId,
   } = useSelector((state: RootState) => state.auth || {
     user: null,
-    token: null,
-    refreshToken: null,
+    tokens: null,
     isAuthenticated: false,
     twoFactorRequired: false,
     twoFactorSessionId: null,
@@ -37,35 +35,32 @@ export const useAuth = () => {
 
   // Initialize auth state from localStorage on app start
   useEffect(() => {
-    const savedToken = localStorage.getItem('token')
-    const savedRefreshToken = localStorage.getItem('refreshToken')
+    const savedTokens = localStorage.getItem('tokens')
     const savedUser = localStorage.getItem('user')
     
-    if (savedToken && savedRefreshToken && savedUser) {
+    if (savedTokens && savedUser) {
       try {
+        const tokens = JSON.parse(savedTokens)
+        const userData = JSON.parse(savedUser)
+        
         // Check if token is expired
-        const tokenPayload = JSON.parse(atob(savedToken.split('.')[1]))
-        const isTokenExpired = tokenPayload.exp * 1000 < Date.now()
+        const isTokenExpired = new Date(tokens.access.expires) <= new Date()
         
         if (isTokenExpired) {
           // Token expired, clear storage and don't restore auth
-          localStorage.removeItem('token')
-          localStorage.removeItem('refreshToken')
+          localStorage.removeItem('tokens')
           localStorage.removeItem('user')
           return
         }
         
-        const userData = JSON.parse(savedUser)
         dispatch(setCredentials({
           user: userData,
-          token: savedToken,
-          refreshToken: savedRefreshToken,
+          tokens: tokens,
         }))
       } catch (error) {
         console.error('Failed to parse saved data:', error)
         // Clear invalid data
-        localStorage.removeItem('token')
-        localStorage.removeItem('refreshToken')
+        localStorage.removeItem('tokens')
         localStorage.removeItem('user')
       }
     }
@@ -78,24 +73,27 @@ export const useAuth = () => {
 
   // Auto-refresh token before expiry
   useEffect(() => {
-    if (token && refreshToken) {
+    if (tokens?.access && tokens?.refresh) {
       // Set up token refresh 5 minutes before expiry
-      const tokenPayload = JSON.parse(atob(token.split('.')[1]))
-      const expiryTime = tokenPayload.exp * 1000
+      const expiryTime = new Date(tokens.access.expires).getTime()
       const refreshTime = expiryTime - Date.now() - 5 * 60 * 1000 // 5 minutes before expiry
       
       if (refreshTime > 0) {
         const timeoutId = setTimeout(async () => {
           try {
-            const result = await refreshTokenMutation({ refreshToken }).unwrap()
+            const result = await refreshTokenMutation({ refreshToken: tokens.refresh.token }).unwrap()
             dispatch(setCredentials({
               user: user!,
-              token: result.token,
-              refreshToken: result.refreshToken,
+              tokens: result,
             }))
+            
+            // Update localStorage
+            localStorage.setItem('tokens', JSON.stringify(result))
           } catch (error) {
             // If refresh fails, logout user
             dispatch(clearCredentials())
+            localStorage.removeItem('tokens')
+            localStorage.removeItem('user')
             router.push('/login')
           }
         }, refreshTime)
@@ -103,19 +101,14 @@ export const useAuth = () => {
         return () => clearTimeout(timeoutId)
       }
     }
-  }, [token, refreshToken, refreshTokenMutation, dispatch, router, user])
+  }, [tokens, refreshTokenMutation, dispatch, router, user])
 
   const handleLogin = async (emailOrUsername: string, password: string) => {
     try {
-      const loginPayload: any = { password }
+      // Always use email for login (if username provided, treat as email for now)
+      const email = emailOrUsername.includes('@') ? emailOrUsername : `${emailOrUsername}@example.com`
       
-      if (emailOrUsername.includes('@')) {
-        loginPayload.email = emailOrUsername
-      } else {
-        loginPayload.username = emailOrUsername
-      }
-      
-      const result = await login(loginPayload).unwrap()
+      const result = await login({ email, password }).unwrap()
       
       if (result.requiresTwoFactor) {
         dispatch(setTwoFactorRequired({ sessionId: result.sessionId! }))
@@ -123,13 +116,11 @@ export const useAuth = () => {
       } else {
         dispatch(setCredentials({
           user: result.user,
-          token: result.token,
-          refreshToken: result.refreshToken,
+          tokens: result.tokens,
         }))
         
         // Store tokens and user in localStorage for persistence
-        localStorage.setItem('token', result.token)
-        localStorage.setItem('refreshToken', result.refreshToken)
+        localStorage.setItem('tokens', JSON.stringify(result.tokens))
         localStorage.setItem('user', JSON.stringify(result.user))
         
         return { success: true, user: result.user }
@@ -154,13 +145,11 @@ export const useAuth = () => {
 
       dispatch(setCredentials({
         user: result.user,
-        token: result.token,
-        refreshToken: result.refreshToken,
+        tokens: result.tokens,
       }))
 
       // Store tokens and user in localStorage for persistence
-      localStorage.setItem('token', result.token)
-      localStorage.setItem('refreshToken', result.refreshToken)
+      localStorage.setItem('tokens', JSON.stringify(result.tokens))
       localStorage.setItem('user', JSON.stringify(result.user))
 
       return { success: true, user: result.user }
@@ -177,8 +166,7 @@ export const useAuth = () => {
       console.error('Logout error:', error)
     } finally {
       dispatch(clearCredentials())
-      localStorage.removeItem('token')
-      localStorage.removeItem('refreshToken')
+      localStorage.removeItem('tokens')
       localStorage.removeItem('user')
       router.push('/login')
     }

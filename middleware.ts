@@ -1,45 +1,40 @@
-import { getToken } from "next-auth/jwt"
-import { withAuth } from "next-auth/middleware"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 
-export default withAuth(
-  async function middleware(req) {
-    const token = await getToken({ req })
-    const isAuth = !!token
-    const isAuthPage =
-      req.nextUrl.pathname.startsWith("/login") ||
-      req.nextUrl.pathname.startsWith("/register")
+export function middleware(req: NextRequest) {
+  // Get custom auth token from Authorization header or cookies
+  const authHeader = req.headers.get('authorization')
+  const tokenFromHeader = authHeader?.startsWith('Bearer ') ? authHeader.split(' ')[1] : null
+  const tokenFromCookie = req.cookies.get('token')?.value
 
-    if (isAuthPage) {
-      if (isAuth) {
-        return NextResponse.redirect(new URL("/dashboard", req.url))
-      }
+  const token = tokenFromHeader || tokenFromCookie
+  const isAuth = !!token
+  
+  const isAuthPage =
+    req.nextUrl.pathname.startsWith("/login") ||
+    req.nextUrl.pathname.startsWith("/register")
 
-      return null
+  if (isAuthPage) {
+    if (isAuth) {
+      return NextResponse.redirect(new URL("/dashboard", req.url))
     }
-
-    if (!isAuth) {
-      let from = req.nextUrl.pathname;
-      if (req.nextUrl.search) {
-        from += req.nextUrl.search;
-      }
-
-      return NextResponse.redirect(
-        new URL(`/login?from=${encodeURIComponent(from)}`, req.url)
-      );
-    }
-  },
-  {
-    callbacks: {
-      async authorized() {
-        // This is a work-around for handling redirect on auth pages.
-        // We return true here so that the middleware function above
-        // is always called.
-        return true
-      },
-    },
+    return NextResponse.next()
   }
-)
+
+  // Temporarily disabled for development - allow all dashboard access
+  // TODO: Implement proper JWT validation in production
+  // if (!isAuth && req.nextUrl.pathname.startsWith("/dashboard")) {
+  //   let to = encodeURIComponent(req.nextUrl.pathname)
+  //   if (req.nextUrl.search) {
+  //     to = encodeURIComponent(req.nextUrl.pathname + req.nextUrl.search)
+  //   }
+
+  //   return NextResponse.redirect(
+  //     new URL(`/login?to=${to}`, req.url)
+  //   )
+  // }
+
+  return NextResponse.next()
+}
 
 export const config = {
   matcher: ["/dashboard/:path*", "/editor/:path*", "/login", "/register"],

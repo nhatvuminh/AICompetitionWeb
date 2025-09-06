@@ -6,11 +6,11 @@ export const env = createEnv({
     // This is optional because it's only used in development.
     // See https://next-auth.js.org/deployment.
     NEXTAUTH_URL: z.string().url().optional(),
-    NEXTAUTH_SECRET: z.string().min(1),
+    NEXTAUTH_SECRET: z.string().min(1).optional(),
     GITHUB_CLIENT_ID: z.string().min(1).optional(),
     GITHUB_CLIENT_SECRET: z.string().min(1).optional(),
     GITHUB_ACCESS_TOKEN: z.string().min(1).optional(),
-    DATABASE_URL: z.string().min(1),
+    DATABASE_URL: z.string().min(1).optional(),
     SMTP_FROM: z.string().min(1).optional(),
     POSTMARK_API_TOKEN: z.string().min(1).optional(),
     POSTMARK_SIGN_IN_TEMPLATE: z.string().min(1).optional(),
@@ -20,7 +20,8 @@ export const env = createEnv({
     STRIPE_PRO_MONTHLY_PLAN_ID: z.string().min(1).optional(),
   },
   client: {
-    NEXT_PUBLIC_APP_URL: z.string().min(1),
+    NEXT_PUBLIC_APP_URL: z.string().min(1).optional(),
+    NEXT_PUBLIC_API_BASE_URL: z.string().min(1).optional(),
   },
   runtimeEnv: {
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
@@ -37,5 +38,6 @@ export const env = createEnv({
     STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
     STRIPE_PRO_MONTHLY_PLAN_ID: process.env.STRIPE_PRO_MONTHLY_PLAN_ID,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+    NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL,
   },
 })

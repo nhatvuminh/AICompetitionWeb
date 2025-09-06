@@ -1,23 +1,32 @@
-import { notFound } from "next/navigation"
+'use client'
 
 import { dashboardConfig } from "@/config/dashboard"
-import { getCurrentUser } from "@/lib/session"
+import { useAuth } from "@/hooks/use-auth"
 import { MainNav } from "@/components/main-nav"
 import { DashboardNav } from "@/components/nav"
 import { SiteFooter } from "@/components/site-footer"
 import { UserAccountNav } from "@/components/user-account-nav"
+import { Icons } from "@/components/icons"
 
 interface DashboardLayoutProps {
   children?: React.ReactNode
 }
 
-export default async function DashboardLayout({
+export default function DashboardLayout({
   children,
 }: DashboardLayoutProps) {
-  const user = await getCurrentUser()
+  const { user, isAuthenticated } = useAuth()
 
-  if (!user) {
-    return notFound()
+  // Show loading spinner while checking auth
+  if (!isAuthenticated || !user) {
+    return (
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex flex-col items-center space-y-2">
+          <Icons.spinner className="h-6 w-6 animate-spin" />
+          <p className="text-sm text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -27,7 +36,7 @@ export default async function DashboardLayout({
           <MainNav items={dashboardConfig.mainNav} />
           <UserAccountNav
             user={{
-              name: user.name,
+              name: user.name || 'User',
               image: user.image,
               email: user.email,
             }}

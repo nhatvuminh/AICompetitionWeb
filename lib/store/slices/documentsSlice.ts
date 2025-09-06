@@ -1,156 +1,156 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { AuthState } from './authSlice'
 
-// Types
+// Types based on API response
+export interface PIIResult {
+  group_id: string
+  type_en: string
+  type_vi: string
+  value: string
+  sen_type: string
+}
+
+export interface DocumentUser {
+  role: 'admin' | 'user'
+  isEmailVerified: boolean
+  name: string
+  email: string
+  id: string
+}
+
 export interface Document {
   id: string
-  name: string
-  type: string
+  status: 'active' | 'processing' | 'completed' | 'error' | 'sensitive_detected'
+  piiResult: PIIResult[] | null // Can be null or array
+  isPublic: boolean
+  filename: string
+  originalname: string
+  mimetype: string
   size: number
-  status: 'uploading' | 'processing' | 'completed' | 'error' | 'sensitive_detected'
-  uploadedAt: string
-  processedAt?: string
-  sensitiveData?: SensitiveDataInfo[]
-  sharedWith?: DocumentPermission[]
-  uploadedBy: {
-    id: string
-    name: string
-    email: string
-  }
+  path: string
+  uploadedBy: DocumentUser
+  lastModifiedBy: DocumentUser
+  fileExtension: string
+  permissions: any[]
+  createdAt?: string
+  updatedAt?: string
 }
 
-export interface SensitiveDataInfo {
-  type: 'pii' | 'financial' | 'medical' | 'confidential'
-  content: string
-  position: {
+export interface DocumentsResponse {
+  code: number
+  data: {
+    results: Document[]
     page: number
-    x: number
-    y: number
-    width: number
-    height: number
+    limit: number
+    totalPages: number
+    totalResults: number
   }
-  confidence: number
-  severity: 'low' | 'medium' | 'high'
 }
 
-export interface DocumentPermission {
-  userId: string
-  userEmail: string
-  userName: string
-  permission: 'read' | 'write' | 'admin'
-  grantedAt: string
-  grantedBy: string
-}
-
-export interface UploadDocumentRequest {
-  file: File
-}
-
-export interface ShareDocumentRequest {
-  documentId: string
-  userIds: string[]
-  permission: 'read' | 'write' | 'admin'
+export interface UploadResponse {
+  code: number
+  message: string
+  fileId: string
+  filename: string
+  originalname: string
+  originalFilename: string
+  mimetype: string
+  size: number
+  fileExtension: string
+  status: string
+  uploadedBy: string
+  createdAt: string
+  updatedAt: string
+  fileNameProcessed: boolean
+  piiResult: PIIResult[]
 }
 
 export interface DocumentFilters {
-  status?: Document['status']
-  type?: string
-  dateFrom?: string
-  dateTo?: string
   search?: string
+  status?: string
+  page?: number
+  limit?: number
 }
 
-// RTK Query API slice
+// Documents API slice
 export const documentsApi = createApi({
   reducerPath: 'documentsApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: '/api/documents/',
+    baseUrl: 'http://172.20.10.6:3000/v1/',
     prepareHeaders: (headers, { getState }) => {
-      const token = (getState() as any).auth?.token
-      if (token) {
-        headers.set('authorization', `Bearer ${token}`)
+      const tokens = (getState() as { auth: AuthState }).auth?.tokens
+      if (tokens?.access?.token) {
+        headers.set('authorization', `Bearer ${tokens.access.token}`)
       }
       return headers
     },
   }),
-  tagTypes: ['Document', 'DocumentList'],
+  tagTypes: ['Document'],
   endpoints: (builder) => ({
-    getDocuments: builder.query<Document[], DocumentFilters>({
-      query: (filters) => ({
-        url: '',
-        params: filters,
-      }),
-      providesTags: ['DocumentList'],
-    }),
-    getDocument: builder.query<Document, string>({
-      query: (id) => `${id}`,
-      providesTags: (result, error, id) => [{ type: 'Document', id }],
-    }),
-    uploadDocument: builder.mutation<Document, UploadDocumentRequest>({
-      query: ({ file }) => {
-        const formData = new FormData()
-        formData.append('file', file)
+    getDocuments: builder.query<Document[], DocumentFilters | void>({
+      query: (filters = {}) => {
+        const params = new URLSearchParams()
+        if (filters.search) params.append('search', filters.search)
+        if (filters.status) params.append('status', filters.status)
+        if (filters.page) params.append('page', filters.page.toString())
+        if (filters.limit) params.append('limit', filters.limit.toString())
+        
         return {
-          url: 'upload',
-          method: 'POST',
-          body: formData,
+          url: `files?${params.toString()}`,
+          method: 'GET',
         }
       },
-      invalidatesTags: ['DocumentList'],
+      transformResponse: (response: DocumentsResponse) => {
+        // Transform piiResult from JSON string to array if needed
+        return response.data.results.map(doc => ({
+          ...doc,
+          piiResult: typeof doc.piiResult === 'string' 
+            ? JSON.parse(doc.piiResult as any) 
+            : doc.piiResult,
+          // Map API status to frontend status
+          status: doc.piiResult && Array.isArray(doc.piiResult) && doc.piiResult.length > 0 
+            ? 'sensitive_detected' as const
+            : 'completed' as const
+        }))
+      },
+      providesTags: ['Document'],
     }),
-    shareDocument: builder.mutation<void, ShareDocumentRequest>({
-      query: ({ documentId, userIds, permission }) => ({
-        url: `${documentId}/share`,
+    
+    uploadDocument: builder.mutation<UploadResponse, FormData>({
+      query: (formData) => ({
+        url: 'files/upload',
         method: 'POST',
-        body: { userIds, permission },
+        body: formData,
       }),
-      invalidatesTags: (result, error, { documentId }) => [
-        { type: 'Document', id: documentId },
-        'DocumentList',
-      ],
+      invalidatesTags: ['Document'],
     }),
-    updateDocumentPermissions: builder.mutation<
-      void,
-      { documentId: string; permissions: DocumentPermission[] }
-    >({
-      query: ({ documentId, permissions }) => ({
-        url: `${documentId}/permissions`,
-        method: 'PUT',
-        body: { permissions },
-      }),
-      invalidatesTags: (result, error, { documentId }) => [
-        { type: 'Document', id: documentId },
-      ],
-    }),
+    
     deleteDocument: builder.mutation<void, string>({
       query: (id) => ({
-        url: id,
+        url: `files/${id}`,
         method: 'DELETE',
       }),
-      invalidatesTags: ['DocumentList'],
+      invalidatesTags: ['Document'],
     }),
-    downloadDocument: builder.mutation<Blob, string>({
-      query: (id) => ({
-        url: `${id}/download`,
-        method: 'GET',
-        responseHandler: (response) => response.blob(),
+    
+    getDocument: builder.query<Document, string>({
+      query: (id) => `files/${id}`,
+      transformResponse: (response: Document) => ({
+        ...response,
+        piiResult: typeof response.piiResult === 'string' 
+          ? JSON.parse(response.piiResult as any) 
+          : response.piiResult,
       }),
-    }),
-    getDocumentContent: builder.query<
-      { content: string; sensitiveData: SensitiveDataInfo[] },
-      string
-    >({
-      query: (id) => `${id}/content`,
+      providesTags: ['Document'],
     }),
   }),
 })
 
 export const {
   useGetDocumentsQuery,
-  useGetDocumentQuery,
   useUploadDocumentMutation,
-  useShareDocumentMutation,
-  useUpdateDocumentPermissionsMutation,
   useDeleteDocumentMutation,
-  useDownloadDocumentMutation,
-  useGetDocumentContentQuery,
+  useGetDocumentQuery,
 } = documentsApi
+
+export default documentsApi.reducer

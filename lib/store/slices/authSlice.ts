@@ -8,21 +8,31 @@ export interface User {
   email: string
   name: string
   role: 'admin' | 'user'
+  isEmailVerified: boolean
   image?: string
+}
+
+export interface AuthTokens {
+  access: {
+    token: string
+    expires: string
+  }
+  refresh: {
+    token: string
+    expires: string
+  }
 }
 
 export interface AuthState {
   user: User | null
-  token: string | null
-  refreshToken: string | null
+  tokens: AuthTokens | null
   isAuthenticated: boolean
   twoFactorRequired: boolean
   twoFactorSessionId: string | null
 }
 
 export interface LoginRequest {
-  email?: string
-  username?: string
+  email: string
   password: string
 }
 
@@ -33,22 +43,17 @@ export interface TwoFactorRequest {
 
 export interface AuthResponse {
   user: User
-  token: string
-  refreshToken: string
+  tokens: AuthTokens
   requiresTwoFactor?: boolean
   sessionId?: string
 }
 
-// Helper function to hash password with MD5
-export const hashPassword = (password: string): string => {
-  return CryptoJS.MD5(password).toString()
-}
+// Remove MD5 hashing as API handles it on server side
 
 // Initial state
 const initialState: AuthState = {
   user: null,
-  token: null,
-  refreshToken: null,
+  tokens: null,
   isAuthenticated: false,
   twoFactorRequired: false,
   twoFactorSessionId: null,
@@ -63,14 +68,12 @@ const authSlice = createSlice({
       state,
       action: PayloadAction<{
         user: User
-        token: string
-        refreshToken: string
+        tokens: AuthTokens
       }>
     ) => {
-      const { user, token, refreshToken } = action.payload
+      const { user, tokens } = action.payload
       state.user = user
-      state.token = token
-      state.refreshToken = refreshToken
+      state.tokens = tokens
       state.isAuthenticated = true
       state.twoFactorRequired = false
       state.twoFactorSessionId = null
@@ -84,8 +87,7 @@ const authSlice = createSlice({
     },
     clearCredentials: (state) => {
       state.user = null
-      state.token = null
-      state.refreshToken = null
+      state.tokens = null
       state.isAuthenticated = false
       state.twoFactorRequired = false
       state.twoFactorSessionId = null
@@ -97,11 +99,11 @@ const authSlice = createSlice({
 export const authApi = createApi({
   reducerPath: 'authApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: '/api/auth/',
+    baseUrl: 'http://172.20.10.6:3000/v1/',
     prepareHeaders: (headers, { getState }) => {
-      const token = (getState() as { auth: AuthState }).auth?.token
-      if (token) {
-        headers.set('authorization', `Bearer ${token}`)
+      const tokens = (getState() as { auth: AuthState }).auth?.tokens
+      if (tokens?.access?.token) {
+        headers.set('authorization', `Bearer ${tokens.access.token}`)
       }
       return headers
     },
@@ -109,28 +111,18 @@ export const authApi = createApi({
   tagTypes: ['User'],
   endpoints: (builder) => ({
     login: builder.mutation<AuthResponse, LoginRequest>({
-      query: ({ email, username, password }) => {
-        const body: any = {
-          password: hashPassword(password), // Hash password before sending
-        }
-        
-        if (email) {
-          body.email = email
-        }
-        if (username) {
-          body.username = username
-        }
-        
-        return {
-          url: 'login',
-          method: 'POST',
-          body,
-        }
-      },
+      query: ({ email, password }) => ({
+        url: 'auth/login',
+        method: 'POST',
+        body: {
+          email,
+          password,
+        },
+      }),
     }),
     verifyTwoFactor: builder.mutation<AuthResponse, TwoFactorRequest>({
       query: ({ sessionId, code }) => ({
-        url: 'verify-2fa',
+        url: 'auth/verify-2fa',
         method: 'POST',
         body: {
           sessionId,
@@ -138,24 +130,21 @@ export const authApi = createApi({
         },
       }),
     }),
-    refreshToken: builder.mutation<
-      { token: string; refreshToken: string },
-      { refreshToken: string }
-    >({
+    refreshToken: builder.mutation<AuthTokens, { refreshToken: string }>({
       query: ({ refreshToken }) => ({
-        url: 'refresh',
+        url: 'auth/refresh-tokens',
         method: 'POST',
         body: { refreshToken },
       }),
     }),
     logout: builder.mutation<void, void>({
       query: () => ({
-        url: 'logout',
+        url: 'auth/logout',
         method: 'POST',
       }),
     }),
     getCurrentUser: builder.query<User, void>({
-      query: () => 'me',
+      query: () => 'auth/me',
       providesTags: ['User'],
     }),
   }),
