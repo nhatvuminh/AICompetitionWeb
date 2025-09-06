@@ -5,14 +5,16 @@ import CryptoJS from 'crypto-js'
 const MOCK_USERS = [
   {
     id: '1',
+    username: 'admin',
     email: 'admin@example.com',
-    password: '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', // 'password' hashed with SHA256
+    password: 'c4ca4238a0b923820dcc509a6f75849b', // '1' hashed with MD5
     name: 'Admin User',
     role: 'admin' as const,
     twoFactorEnabled: false,
   },
   {
     id: '2', 
+    username: 'user',
     email: 'user@example.com',
     password: '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', // 'password' hashed with SHA256
     name: 'Regular User',
@@ -21,6 +23,7 @@ const MOCK_USERS = [
   },
   {
     id: '3',
+    username: 'admin2fa',
     email: 'admin2fa@example.com', 
     password: '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', // 'password' hashed with SHA256
     name: 'Admin with 2FA',
@@ -58,11 +61,11 @@ function generateRefreshToken(userId: string) {
 
 export async function POST(request: NextRequest) {
   try {
-    const { email, password } = await request.json()
+    const { email, username, password } = await request.json()
 
-    if (!email || !password) {
+    if ((!email && !username) || !password) {
       return NextResponse.json(
-        { message: 'Email and password are required' },
+        { message: 'Email/username and password are required' },
         { status: 400 }
       )
     }
@@ -70,23 +73,20 @@ export async function POST(request: NextRequest) {
     // Hash the provided password using MD5 (as specified in requirements)
     const hashedPassword = CryptoJS.MD5(password).toString()
     
-    // Find user by email
-    const user = MOCK_USERS.find(u => u.email === email)
+    // Find user by email or username
+    const user = MOCK_USERS.find(u => u.email === email || u.username === username)
     
     if (!user) {
       return NextResponse.json(
-        { message: 'Invalid email or password' },
+        { message: 'Invalid username/email or password' },
         { status: 401 }
       )
     }
 
-    // For demo purposes, accept both MD5 and SHA256 hashed passwords
-    const isMD5Match = hashedPassword === user.password
-    const isSHA256Match = password === 'password' // Allow plain text for demo
-    
-    if (!isMD5Match && !isSHA256Match) {
+    // Verify password using MD5 hash (as specified in security requirements)
+    if (hashedPassword !== user.password) {
       return NextResponse.json(
-        { message: 'Invalid email or password' },
+        { message: 'Invalid username/email or password' },
         { status: 401 }
       )
     }

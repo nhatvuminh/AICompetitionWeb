@@ -105,9 +105,17 @@ export const useAuth = () => {
     }
   }, [token, refreshToken, refreshTokenMutation, dispatch, router, user])
 
-  const handleLogin = async (email: string, password: string) => {
+  const handleLogin = async (emailOrUsername: string, password: string) => {
     try {
-      const result = await login({ email, password }).unwrap()
+      const loginPayload: any = { password }
+      
+      if (emailOrUsername.includes('@')) {
+        loginPayload.email = emailOrUsername
+      } else {
+        loginPayload.username = emailOrUsername
+      }
+      
+      const result = await login(loginPayload).unwrap()
       
       if (result.requiresTwoFactor) {
         dispatch(setTwoFactorRequired({ sessionId: result.sessionId! }))
@@ -126,10 +134,12 @@ export const useAuth = () => {
         
         return { success: true, user: result.user }
       }
+      
     } catch (error: any) {
       throw new Error(error.data?.message || 'Login failed')
     }
   }
+
 
   const handleTwoFactorVerification = async (otpCode: string) => {
     if (!twoFactorSessionId) {

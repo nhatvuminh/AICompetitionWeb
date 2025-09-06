@@ -22,8 +22,8 @@ import {
 
 // Validation schemas
 const loginSchema = z.object({
-  email: z.string().email('Please enter a valid email address'),
-  password: z.string().min(8, 'Password must be at least 8 characters'),
+  emailOrUsername: z.string().min(1, 'Please enter email or username'),
+  password: z.string().min(1, 'Password is required'),
 })
 
 const twoFactorSchema = z.object({
@@ -56,7 +56,7 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
   const loginForm = useForm<LoginFormData>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      email: '',
+      emailOrUsername: '',
       password: '',
     },
   })
@@ -71,7 +71,7 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
 
   const onLoginSubmit = async (data: LoginFormData) => {
     try {
-      const result = await handleLogin(data.email, data.password)
+      const result = await handleLogin(data.emailOrUsername, data.password)
       
       if (result.requiresTwoFactor) {
         toast({
@@ -83,7 +83,7 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
           title: 'Welcome back!',
           description: 'You have been successfully logged in.',
         })
-        const redirectUrl = searchParams?.get('from') || '/dashboard'
+        const redirectUrl = searchParams?.get('from') || '/dashboard/documents'
         router.push(redirectUrl)
       }
     } catch (error: any) {
@@ -104,7 +104,7 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
           title: 'Authentication Successful',
           description: 'You have been successfully logged in.',
         })
-        const redirectUrl = searchParams?.get('from') || '/dashboard'
+        const redirectUrl = searchParams?.get('from') || '/dashboard/documents'
         router.push(redirectUrl)
       }
     } catch (error: any) {
@@ -187,20 +187,20 @@ export function EnhancedAuthForm({ className, mode = 'login', ...props }: Enhanc
       <form onSubmit={loginForm.handleSubmit(onLoginSubmit)}>
         <div className="grid gap-4">
           <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="emailOrUsername">Email or Username</Label>
             <Input
-              id="email"
-              placeholder="name@example.com"
-              type="email"
+              id="emailOrUsername"
+              placeholder="admin or name@example.com"
+              type="text"
               autoCapitalize="none"
-              autoComplete="email"
+              autoComplete="username"
               autoCorrect="off"
               disabled={isLoginLoading}
-              {...loginForm.register('email')}
+              {...loginForm.register('emailOrUsername')}
             />
-            {loginForm.formState.errors?.email && (
+            {loginForm.formState.errors?.emailOrUsername && (
               <p className="text-xs text-red-600">
-                {loginForm.formState.errors.email.message}
+                {loginForm.formState.errors.emailOrUsername.message}
               </p>
             )}
           </div>

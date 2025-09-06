@@ -1,4 +1,6 @@
 {
-  "/(marketing)/page": "app/(marketing)/page.js",
-  "/(auth)/login/page": "app/(auth)/login/page.js"
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(marketing)/page": "app/(marketing)/page.js"
 }

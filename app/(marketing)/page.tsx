@@ -30,7 +30,7 @@ export default function IndexPage() {
           <Icons.spinner className="h-8 w-8 animate-spin text-muted-foreground" />
         </div>
         <div className="text-center space-y-2">
-          <h2 className="text-lg font-semibold">Document Security Portal</h2>
+          <h2 className="text-lg font-semibold">MB Document Security Portal</h2>
           <p className="text-sm text-muted-foreground">
             {isAuthenticated === null && 'Checking authentication...'}
             {isAuthenticated === true && 'Redirecting to dashboard...'}

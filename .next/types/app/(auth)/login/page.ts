@@ -1,4 +1,4 @@
-// File: /Users/ebankcorp/Documents/AICompetitionWeb/app/(auth)/login/page.tsx
+// File: /Users/ebankcorp/Documents/os/AIWeb/app/(auth)/login/page.tsx
 import * as entry from '../../../../../app/(auth)/login/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

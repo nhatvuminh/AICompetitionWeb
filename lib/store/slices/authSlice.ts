@@ -21,7 +21,8 @@ export interface AuthState {
 }
 
 export interface LoginRequest {
-  email: string
+  email?: string
+  username?: string
   password: string
 }
 
@@ -108,14 +109,24 @@ export const authApi = createApi({
   tagTypes: ['User'],
   endpoints: (builder) => ({
     login: builder.mutation<AuthResponse, LoginRequest>({
-      query: ({ email, password }) => ({
-        url: 'login',
-        method: 'POST',
-        body: {
-          email,
+      query: ({ email, username, password }) => {
+        const body: any = {
           password: hashPassword(password), // Hash password before sending
-        },
-      }),
+        }
+        
+        if (email) {
+          body.email = email
+        }
+        if (username) {
+          body.username = username
+        }
+        
+        return {
+          url: 'login',
+          method: 'POST',
+          body,
+        }
+      },
     }),
     verifyTwoFactor: builder.mutation<AuthResponse, TwoFactorRequest>({
       query: ({ sessionId, code }) => ({

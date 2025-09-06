@@ -1178,9 +1178,6 @@ video {
 .left-2 {
   left: 0.5rem;
 }
-.left-4 {
-  left: 1rem;
-}
 .left-\[-200px\] {
   left: -200px;
 }
@@ -3602,10 +3599,6 @@ video {
 
   .md\:sticky {
     position: sticky;
-  }
-
-  .md\:left-8 {
-    left: 2rem;
   }
 
   .md\:right-8 {
