@@ -34,6 +34,8 @@ export interface Document {
   permissions: any[]
   createdAt?: string
   updatedAt?: string
+  // Computed fields for UI
+  uploadedAt?: string // Alias for createdAt for backward compatibility
 }
 
 export interface DocumentsResponse {
@@ -88,12 +90,12 @@ export const documentsApi = createApi({
   tagTypes: ['Document'],
   endpoints: (builder) => ({
     getDocuments: builder.query<Document[], DocumentFilters | void>({
-      query: (filters = {}) => {
+      query: (filters) => {
         const params = new URLSearchParams()
-        if (filters.search) params.append('search', filters.search)
-        if (filters.status) params.append('status', filters.status)
-        if (filters.page) params.append('page', filters.page.toString())
-        if (filters.limit) params.append('limit', filters.limit.toString())
+        if (filters?.search) params.append('search', filters.search)
+        if (filters?.status) params.append('status', filters.status)
+        if (filters?.page) params.append('page', filters.page.toString())
+        if (filters?.limit) params.append('limit', filters.limit.toString())
         
         return {
           url: `files?${params.toString()}`,
@@ -110,7 +112,9 @@ export const documentsApi = createApi({
           // Map API status to frontend status
           status: doc.piiResult && Array.isArray(doc.piiResult) && doc.piiResult.length > 0 
             ? 'sensitive_detected' as const
-            : 'completed' as const
+            : 'completed' as const,
+          // Add uploadedAt alias for backward compatibility
+          uploadedAt: doc.createdAt
         }))
       },
       providesTags: ['Document'],
@@ -140,6 +144,8 @@ export const documentsApi = createApi({
         piiResult: typeof response.piiResult === 'string' 
           ? JSON.parse(response.piiResult as any) 
           : response.piiResult,
+        // Add uploadedAt alias for backward compatibility
+        uploadedAt: response.createdAt
       }),
       providesTags: ['Document'],
     }),

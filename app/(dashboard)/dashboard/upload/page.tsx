@@ -60,7 +60,11 @@ export default function UploadPage() {
         )
       }, 100)
 
-      const result = await uploadDocument({ file }).unwrap()
+      // Create FormData for file upload
+      const formData = new FormData()
+      formData.append('file', file)
+      
+      const result = await uploadDocument(formData).unwrap()
 
       clearInterval(progressInterval)
 
@@ -122,6 +126,7 @@ export default function UploadPage() {
   })
 
   const getFileIcon = (fileName: string) => {
+    if (!fileName) return 'file'
     const extension = fileName.split('.').pop()?.toLowerCase()
     switch (extension) {
       case 'pdf':
@@ -157,12 +162,12 @@ export default function UploadPage() {
         title="Upload Documents"
         description="Upload documents to scan for sensitive information"
         headerActions={
-          <Button variant="outline" asChild>
-            <Link href="/dashboard/documents">
+          <Link href="/dashboard/documents">
+            <Button variant="outline">
               <Icons.post className="mr-2 h-4 w-4" />
               View Documents
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         }
       >
         <div className="space-y-8">

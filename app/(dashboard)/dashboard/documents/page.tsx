@@ -73,6 +73,7 @@ export default function DocumentsPage() {
   }, [documents, filters])
 
   const getFileIcon = (fileName: string) => {
+    if (!fileName) return 'file'
     const extension = fileName.split('.').pop()?.toLowerCase()
     switch (extension) {
       case 'pdf':
@@ -233,6 +234,7 @@ function DocumentTable({
   showSensitiveInfo?: boolean
 }) {
   const getFileIcon = (fileName: string) => {
+    if (!fileName) return 'file'
     const extension = fileName.split('.').pop()?.toLowerCase()
     switch (extension) {
       case 'pdf':
@@ -302,7 +304,7 @@ function DocumentTable({
         </TableHeader>
         <TableBody>
           {documents.map((document) => {
-            const FileIcon = Icons[getFileIcon(document.name) as keyof typeof Icons]
+            const FileIcon = Icons[getFileIcon(document.originalname || document.filename) as keyof typeof Icons]
             const StatusIcon = Icons[statusIcons[document.status] as keyof typeof Icons]
             
             return (

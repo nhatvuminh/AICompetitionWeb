@@ -18,7 +18,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Icons } from '@/components/icons'
-import { ThemeToggle } from '@/components/mode-toggle'
+import { ModeToggle } from '@/components/mode-toggle'
 
 interface NavigationItem {
   title: string
@@ -177,7 +177,7 @@ export function DashboardLayout({
 
       {/* Mobile Sidebar */}
       <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
-        <SheetContent side="left" className="p-0 w-64">
+        <SheetContent position="left" className="p-0 w-64">
           <SidebarContent />
         </SheetContent>
       </Sheet>
@@ -189,7 +189,7 @@ export function DashboardLayout({
           <div className="flex h-14 items-center gap-4 px-4">
             <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button variant="ghost" size="sm" className="md:hidden h-8 w-8 px-0">
                   <Icons.ellipsis className="h-4 w-4" />
                   <span className="sr-only">Toggle sidebar</span>
                 </Button>
@@ -209,7 +209,7 @@ export function DashboardLayout({
 
             <div className="flex items-center gap-2">
               {headerActions}
-              <ThemeToggle />
+              <ModeToggle />
               {isAdmin() && (
                 <Badge variant="secondary">Admin</Badge>
               )}
