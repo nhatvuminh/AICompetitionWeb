@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+- Mã hoá md5 password khi gửi thông tin đăng nhập qua phía Backend
+- Sử dụng:
+React Router v6 (protected route, phân quyền theo role).
+State management: Redux Toolkit.
+Auth: JWT + refresh token.
+UI Library: hoặc Shadcn/UI + Tailwind (modern, minimal).
+- Giao diện chuẩn Responsive trên Web, Desktop, Mobile
+- Chuẩn An toàn thông tin
