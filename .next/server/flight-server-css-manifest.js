@@ -7,6 +7,9 @@ self.__RSC_CSS_MANIFEST={
     ],
     "/Users/ebankcorp/Documents/os/AIWeb/app/(marketing)/[...slug]/page.tsx": [
       "/Users/ebankcorp/Documents/os/AIWeb/styles/mdx.css"
+    ],
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(docs)/docs/[[...slug]]/page.tsx": [
+      "/Users/ebankcorp/Documents/os/AIWeb/styles/mdx.css"
     ]
   },
   "cssModules": {
@@ -52,6 +55,12 @@ self.__RSC_CSS_MANIFEST={
       "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/font/local/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../assets/fonts/CalSans-SemiBold.woff2\",\"variable\":\"--font-heading\"}],\"variableName\":\"fontHeading\"}"
     ],
     "/Users/ebankcorp/Documents/os/AIWeb/app/(dashboard)/dashboard/billing/page": [
+      "/Users/ebankcorp/Documents/os/AIWeb/styles/globals.css",
+      "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-sans\"}],\"variableName\":\"fontSans\"}",
+      "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/font/local/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../assets/fonts/CalSans-SemiBold.woff2\",\"variable\":\"--font-heading\"}],\"variableName\":\"fontHeading\"}"
+    ],
+    "/Users/ebankcorp/Documents/os/AIWeb/app/(docs)/docs/[[...slug]]/page": [
+      "/Users/ebankcorp/Documents/os/AIWeb/styles/mdx.css",
       "/Users/ebankcorp/Documents/os/AIWeb/styles/globals.css",
       "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-sans\"}],\"variableName\":\"fontSans\"}",
       "/Users/ebankcorp/Documents/os/AIWeb/node_modules/next/font/local/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../assets/fonts/CalSans-SemiBold.woff2\",\"variable\":\"--font-heading\"}],\"variableName\":\"fontHeading\"}"
